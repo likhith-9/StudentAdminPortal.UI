@@ -5,6 +5,7 @@ export interface UpdateStudentRequest{
   email: string,
   mobile: string,
   genderId: string,
+  
   physicalAddress: string,
   postalAddress: string
 }

@@ -11,9 +11,11 @@ export class GenderService {
 
   private baseApiUrl= environment.baseApiUrl;
 
-  constructor(private httpClient:HttpClient) { }
+  constructor(private httpClient:HttpClient)
+  { }
 
-  getGenderList(): Observable<Gender[]>{
+  getGenderList(): Observable<Gender[]>
+  {
     return this.httpClient.get<Gender[]>(this.baseApiUrl+ '/genders');
   }
 }
