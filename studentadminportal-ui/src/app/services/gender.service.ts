@@ -5,14 +5,12 @@ import { environment } from 'src/environments/environment';
 import { Gender } from '../models/api-models/gender.model';
 
 @Injectable({
-  providedIn: 'root'
-})
+  providedIn: 'root'})
 export class GenderService {
 
   private baseApiUrl= environment.baseApiUrl;
 
-  constructor(private httpClient:HttpClient)
-  { }
+  constructor(private httpClient:HttpClient){ }
 
   getGenderList(): Observable<Gender[]>
   {
